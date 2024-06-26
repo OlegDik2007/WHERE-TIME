@@ -1,0 +1,7 @@
+SELECT user_id,
+       order_id,
+       time
+FROM   user_actions
+WHERE  time >= '2022-09-06 00:00:00'
+   and action = 'create_order'
+ORDER BY order_id asc
